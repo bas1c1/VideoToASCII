@@ -73,7 +73,7 @@ def start_convert(fname, vcols, mor):
 
 fileorcamera = input("Веб-камера или видео-файл (введите 0 или 1): ")
 mor = bool(int(input("Уровень вывода ASCII (0 или 1, рекомендуется 0): ")))
-
+#60 - самый оптимальный размер
 cols = int(input("Введите размер картинки (рекомендуется 60): "))
 
 if fileorcamera == "0":
