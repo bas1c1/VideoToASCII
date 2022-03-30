@@ -74,12 +74,11 @@ def start_convert(fname, vcols, mor):
 fileorcamera = input("Веб-камера или видео-файл (введите 0 или 1): ")
 mor = bool(int(input("Уровень вывода ASCII (0 или 1, рекомендуется 0): ")))
 
-cols = 60
+cols = int(input("Введите размер картинки (рекомендуется 60): "))
 
 if fileorcamera == "0":
     fileorcamera = 0
 elif fileorcamera == "1":
-    cols = 100
     fileorcamera = input("Введите имя файла: ")
 
 cap = cv2.VideoCapture(fileorcamera)
